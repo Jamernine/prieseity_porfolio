@@ -59,10 +59,12 @@
       <section class="cta" id="cta">
         <div class="container">
           <div class="cta__box reveal">
+            <video class="cta__video" src="assets/video/halftone.webm" autoplay muted loop playsinline aria-hidden="true"></video>
             <img class="cta__lily" src="assets/img/lily.png" alt="" aria-hidden="true">
             <span class="label"><span class="star">✦</span> Let's work together</span>
-            <h2>Have a world in mind? Let's make it <em>feel real</em>.</h2>
-            <a class="btn btn--light" href="contact.html#contact">Get in touch ${arrow}</a>
+            <h2>Give your brand a <em>light</em> of its own.</h2>
+            <p>Tell me about the world you're building. I reply within two working days.</p>
+            <a class="btn btn--light" href="contact.html#contact">Get In Touch ${arrow}</a>
           </div>
         </div>
       </section>`;
@@ -100,7 +102,7 @@
   // cluster card — one cover per category, shown in the shared cobalt tone (true colour on hover)
   const clusterCard = (c) => `
     <a class="work-card cluster-card reveal" href="${catHref(c)}" data-view>
-      <div class="work-card__media tone">${coverImg(c.cover, c.name, c.coverPos)}</div>
+      <div class="work-card__media art-panel${c.artShape ? ' art-panel--' + c.artShape : ''}"><img src="${c.art || c.cover}" alt="${esc(c.name)}" loading="lazy"></div>
       <div class="work-card__meta">
         <span class="work-card__idx">${pad(c.n)}</span>
         <h3 class="work-card__title">${esc(c.name)}</h3>
@@ -418,7 +420,8 @@
       el.alt = '';
       el.setAttribute('aria-hidden', 'true');
       el.style.top = `${900 + k * gap}px`;
-      el.style[k % 2 ? 'right' : 'left'] = `${2 + (k % 3)}vw`;
+      // sit in the outer margin, outside the content column
+      el.style[k % 2 ? 'right' : 'left'] = 'max(6px, calc((100vw - 1280px) / 2 - 110px))';
       el.style.setProperty('--rot', `${(k % 2 ? 1 : -1) * (4 + (k % 3) * 3)}deg`);
       el.onerror = () => el.remove();
       main.appendChild(el);

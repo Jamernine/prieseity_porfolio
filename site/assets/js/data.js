@@ -7,7 +7,7 @@ window.SITE = {
   "name": "Prieseity",
   "role": "AI Films Maker",
   "location": "Ho Chi Minh City, Vietnam",
-  "email": "",
+  "email": "prieseityinwork@gmail.com",
   "phone": "",
   "website": "Prieseity",
   "instagram": "prieseity",
@@ -197,50 +197,59 @@ window.SITE = {
       "id": "ai-film",
       "name": "AI Films",
       "note": "Original series and short films, made end to end with AI.",
-      "cover": "assets/img/works/sod-ep01-poster.jpg"
+      "cover": "assets/img/works/sod-ep01-poster.jpg",
+      "art": "assets/img/works/sod-cover.png",
+      "artShape": "circle"
     },
     {
       "id": "numen",
       "name": "Numen",
       "note": "My own brand — as founder.",
-      "cover": "assets/img/identity-1.jpg"
+      "cover": "assets/img/identity-1.jpg",
+      "art": "assets/img/identity-1.jpg"
     },
     {
       "id": "hackathon",
       "name": "Hackathon",
       "note": "Built against the clock — characters, films and products.",
-      "cover": "assets/img/works/sanzo-1.webp"
+      "cover": "assets/img/works/sanzo-1.webp",
+      "art": "assets/img/works/sanzo-1.webp"
     },
     {
       "id": "saas",
       "name": "Videos & SaaS Marketing",
       "note": "Product films, explainers and launch videos for software and Web3 teams.",
-      "cover": "assets/img/works/memwal-1.jpg"
+      "cover": "assets/img/works/memwal-1.jpg",
+      "art": "assets/img/works/memwal-cover.webp"
     },
     {
       "id": "creators",
       "name": "Video Edit for Creators",
       "note": "Long-form and short-form edits for creators and brands.",
-      "cover": "assets/img/works/kan-qa-3-poster.jpg"
+      "cover": "assets/img/works/kan-qa-3-poster.jpg",
+      "art": "assets/img/works/kan-qa-3-poster.jpg"
     },
     {
       "id": "nft",
       "name": "NFT",
       "note": "Art direction for an NFT collection.",
-      "cover": "assets/img/works/nft-cover.webp"
+      "cover": "assets/img/works/nft-cover.webp",
+      "art": "assets/img/works/nft-cover.webp"
     },
     {
       "id": "motion",
       "name": "Motion Design",
       "note": "Motion graphics and LED visuals.",
       "cover": "assets/img/works/james-cover.webp",
-      "coverPos": "18% 35%"
+      "coverPos": "18% 35%",
+      "art": "assets/img/works/james-cover.webp"
     },
     {
       "id": "side",
       "name": "Side Works",
       "note": "Freelance social, animation and design work.",
-      "cover": "assets/img/works/cvpad-1.jpg"
+      "cover": "assets/img/works/cvpad-1.jpg",
+      "art": "assets/img/works/cvpad-nft-3.jpg"
     }
   ],
   "projects": [
@@ -942,11 +951,11 @@ window.SITE = {
   "experience": [],
   "highlights": [],
   "doodles": [
-    "doodle-1.png",
-    "doodle-2.png",
-    "doodle-3.png",
-    "doodle-4.png",
-    "doodle-5.png",
-    "doodle-6.png"
+    "doodle-1.svg",
+    "doodle-2.svg",
+    "doodle-3.svg",
+    "doodle-4.svg",
+    "doodle-5.svg",
+    "doodle-6.svg"
   ]
 };
