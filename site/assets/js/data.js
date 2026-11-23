@@ -715,6 +715,8 @@ window.SITE = {
       "gallery": [
         "assets/img/works/cvpad-1.jpg",
         "assets/img/works/cvpad-7.jpg",
+        "assets/img/works/cva-7.jpg",
+        "assets/img/works/cva-6.jpg",
         "assets/img/works/cvpad-9.jpg",
         "assets/img/works/cvpad-4.jpg",
         "assets/img/works/cvpad-8.jpg",
@@ -773,8 +775,6 @@ window.SITE = {
         "assets/img/works/cva-4.jpg",
         "assets/img/works/cva-5.jpg",
         "assets/img/works/cva-10.jpg",
-        "assets/img/works/cva-6.jpg",
-        "assets/img/works/cva-7.jpg",
         "assets/img/works/cva-8.jpg",
         "assets/img/works/cva-9.jpg"
       ]
@@ -798,6 +798,13 @@ window.SITE = {
         "assets/img/works/flomo-2.jpg",
         "assets/img/works/flomo-3.jpg",
         "assets/img/works/flomo-4.jpg",
+        "assets/img/works/flomo-11.webp",
+        "assets/img/works/flomo-12.webp",
+        "assets/img/works/flomo-13.webp",
+        "assets/img/works/flomo-14.webp",
+        "assets/img/works/flomo-15.webp",
+        "assets/img/works/flomo-16.webp",
+        "assets/img/works/flomo-17.webp",
         "assets/img/works/flomo-5.jpg",
         "assets/img/works/flomo-6.jpg",
         "assets/img/works/flomo-7.jpg"
@@ -823,8 +830,9 @@ window.SITE = {
         "assets/img/works/sc-2.jpg",
         "assets/img/works/sc-3.jpg",
         "assets/img/works/sc-4.jpg",
-        "assets/img/works/sc-5.jpg",
-        "assets/img/works/sc-6.jpg"
+        "assets/img/works/sc-prefall-title.webp",
+        "assets/img/works/sc-allure-title.webp",
+        "assets/img/works/sc-back.webp"
       ]
     },
     {
@@ -843,7 +851,6 @@ window.SITE = {
       ],
       "gallery": [
         "assets/img/works/ideolux-1.jpg",
-        "assets/img/works/ideolux-2.jpg",
         "assets/img/works/ideolux-4.jpg",
         "assets/img/works/ideolux-5.jpg",
         "assets/img/works/ideolux-3.jpg",
@@ -852,7 +859,6 @@ window.SITE = {
         "assets/img/works/ideolux-8.jpg",
         "assets/img/works/ideolux-9.jpg",
         "assets/img/works/ideolux-book-1.jpg",
-        "assets/img/works/ideolux-book-2.jpg",
         "assets/img/works/ideolux-book-3.jpg",
         "assets/img/works/ideolux-book-4.jpg",
         "assets/img/works/ideolux-book-5.jpg",

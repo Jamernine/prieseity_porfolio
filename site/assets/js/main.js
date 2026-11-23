@@ -188,7 +188,6 @@
               <h3 class="service__name">${s.name}</h3>
               <div class="service__body">
                 <p class="service__desc">${s.desc}</p>
-                ${linked.length ? `<div class="service__projects">${linked.map((p) => `<a href="work.html?slug=${p.slug}">${esc(p.title)}</a>`).join('')}</div>` : ''}
               </div>
             </div>`;
           }).join('')}</div>

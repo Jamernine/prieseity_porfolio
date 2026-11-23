@@ -226,9 +226,10 @@ body.menu-open { overflow: hidden; }
 .cta__lily { position: absolute; z-index: -1; width: 300px; right: -40px; top: -30px; opacity: .55; pointer-events: none; }
 .cta__box .label { color: #b9c3ea; }
 .cta__box .star { color: var(--neon); }
-.cta h2 { font-size: clamp(32px, 4vw, 56px); font-weight: 300; line-height: 1.05; margin: 0; max-width: 720px; }
+.cta h2 { font-size: clamp(32px, 3.6vw, 52px); font-weight: 300; line-height: 1.1; margin: 0; max-width: 640px; text-wrap: balance; }
 .cta h2 em { color: #7cb8ff; font-style: italic; }
-.cta p { margin: 0; color: #c3cdf5; max-width: 440px; }
+.cta p { margin: 0; color: #c3cdf5; max-width: 420px; line-height: 1.55; text-wrap: balance; }
+.cta__box .btn { margin-top: 6px; }
 
 /* footer */
 .site-footer { padding: 96px 0 40px; position: relative; overflow: hidden; }
