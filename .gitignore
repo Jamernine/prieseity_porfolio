@@ -1,0 +1,13 @@
+# This repo only tracks the portfolio website.
+# Everything else in this folder (video projects, tools, references, SFX…) stays local.
+/*
+!/site/
+!/serve.js
+!/README.md
+!/.gitignore
+
+# local junk inside the site
+Thumbs.db
+desktop.ini
+.DS_Store
+*.log
