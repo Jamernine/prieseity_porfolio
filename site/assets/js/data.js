@@ -53,7 +53,7 @@ window.SITE = {
   services: [
     { name: 'AI Film & Video Production', desc: 'I create AI-powered films and videos from concept to final cut, developing the story, characters, and environments and keeping them visually consistent from shot to shot.', tags: ['Story', 'Characters', 'Environments', 'Edit'], projects: ['science-of-doom', 'sanzo', 'invideo', 'memwal', 'sui-hackathon', 'skillname', 'kan-dental', 'tina-kol', 'goodchat', 'james'] },
     { name: 'Art Direction & Visual Design', desc: 'I develop visual concepts and create campaign imagery, brand graphics, and social content using a mix of AI image generation and hands-on design.', tags: ['Campaigns', 'Brand graphics', 'Social'], projects: ['numen', 'sanzo', 'cvmech-nft', 'cvpad', 'cv-alpha', 'flomo', 'sc-studios'] },
-    { name: 'UI/UX & Web Design', desc: 'I design websites and digital interfaces, from user flows and wireframes to polished, responsive designs.', tags: ['User flows', 'Wireframes', 'Responsive UI'], projects: ['numen', 'modulbad', 'agentlauncher', 'design-system'] },
+    { name: 'UI/UX & Web Design', desc: 'I design websites and digital interfaces, from user flows and wireframes to polished, responsive designs.', tags: ['User flows', 'Wireframes', 'Responsive UI'], projects: ['numen', 'agentlauncher', 'design-system'] },
     { name: 'AI Agents & Workflow Automation', desc: 'I build AI-assisted workflows for creative production and day-to-day operations, helping teams automate repetitive tasks and move work through each stage.', tags: ['AI agents', 'Automation', 'Pipelines'], projects: [] },
     { name: 'Business Operations & Sales Support', desc: 'I help small teams organize their sales and admin workflows, set up reporting, and build practical systems for managing day-to-day work.', tags: ['Sales ops', 'Reporting', 'Systems'], projects: [] }
   ],
@@ -656,29 +656,6 @@ window.SITE = {
         "assets/img/works/ideolux-7.jpg",
         "assets/img/works/ideolux-8.jpg",
         "assets/img/works/ideolux-9.jpg"
-      ]
-    },
-    {
-      "slug": "modulbad",
-      "category": "side",
-      "title": "Modulbad",
-      "discipline": "UI Design",
-      "client": "Modulbad",
-      "role": "UI design, desktop & mobile",
-      "year": "2026",
-      "cover": "assets/img/works/modulbad-1.jpg",
-      "summary": "Website UI for a Swiss maker of prefabricated modular bathrooms — clear, technical and built to convert.",
-      "body": [
-        "Modulbad sells to architects and builders, so the interface had to explain a technical product without feeling heavy. Each page opens with a strong construction image and moves into calm, well-structured content.",
-        "I designed the full set of pages — home, process, technology, surfaces, references, company and legal — for desktop and mobile, in German and French."
-      ],
-      "gallery": [
-        "assets/img/works/modulbad-1.jpg",
-        "assets/img/works/modulbad-3.jpg",
-        "assets/img/works/modulbad-4.jpg",
-        "assets/img/works/modulbad-5.jpg",
-        "assets/img/works/modulbad-6.jpg",
-        "assets/img/works/modulbad-2.jpg"
       ]
     },
     {
