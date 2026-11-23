@@ -540,21 +540,31 @@ window.SITE = {
       "role": "Editing, compositing, motion graphics",
       "year": "2026",
       "cover": "assets/img/works/portfolio0427-poster.jpg",
-      "summary": "Three explainer videos on Sui for a crypto KOL on X — one fully composited SpongeBob-style episode and two talking-head pieces.",
+      "summary": "Three videos on Sui for crypto KOL Tina, made for a Sui hackathon — one fully composited SpongeBob-style DeepBook episode and two talking-head explainers.",
       "body": [
         "The DeepBook episode is a full compose: a SpongeBob-style underwater world with animated characters explaining how Sui’s unified liquidity layer works.",
         "The other two are talk videos — Tina on camera, cut with animated scenes, on-screen type and product shots so a dense DeFi topic stays easy to follow."
       ],
       "gallery": [
-        "assets/img/works/portfolio0427-poster.jpg",
-        "assets/img/works/tina-talk-1-poster.jpg",
-        "assets/img/works/deepbook-poster.jpg",
+        {
+          "youtube": "xAav5Tj8nT4",
+          "title": "DeepBook Sui — Hackathon (SpongeBob compose)"
+        },
+        {
+          "youtube": "-HKbecKW5Ds",
+          "title": "Track 3 — DeepBook"
+        },
+        {
+          "youtube": "1qbD4JWf900",
+          "title": "Tina — Sui"
+        },
         "assets/img/works/tina-scene-3.jpg",
         "assets/img/works/tina-scene-5.jpg",
         "assets/img/works/tina-scene-7.jpg",
         "assets/img/works/tina-scene-12.jpg",
         "assets/img/works/deepbook-scene.jpg"
-      ]
+      ],
+      "engagement": "Collab · Hackathon"
     },
     {
       "slug": "kan-dental",
