@@ -128,16 +128,6 @@ window.SITE = {
       ]
     },
     {
-      "name": "AI Agents & Workflow Automation",
-      "desc": "I build AI-assisted workflows for creative production and day-to-day operations, helping teams automate repetitive tasks and move work through each stage.",
-      "tags": [
-        "AI agents",
-        "Automation",
-        "Pipelines"
-      ],
-      "projects": []
-    },
-    {
       "name": "Business Operations & Sales Support",
       "desc": "I help small teams organize their sales and admin workflows, set up reporting, and build practical systems for managing day-to-day work.",
       "tags": [
@@ -197,8 +187,8 @@ window.SITE = {
       "id": "ai-film",
       "name": "AI Films",
       "note": "Original series and short films, made end to end with AI.",
-      "cover": "assets/img/works/sod-ep01-poster.jpg",
-      "art": "assets/img/works/sod-cover.png",
+      "cover": "assets/img/works/sod-cover.png",
+      "panel": true,
       "artShape": "circle"
     },
     {
@@ -206,35 +196,38 @@ window.SITE = {
       "name": "Numen",
       "note": "My own brand — as founder.",
       "cover": "assets/img/identity-1.jpg",
-      "art": "assets/img/identity-1.jpg"
+      "panel": false
     },
     {
       "id": "hackathon",
       "name": "Hackathon",
       "note": "Built against the clock — characters, films and products.",
       "cover": "assets/img/works/sanzo-1.webp",
-      "art": "assets/img/works/sanzo-1.webp"
+      "panel": false,
+      "coverPos": "50% 30%"
     },
     {
       "id": "saas",
       "name": "Videos & SaaS Marketing",
       "note": "Product films, explainers and launch videos for software and Web3 teams.",
-      "cover": "assets/img/works/memwal-1.jpg",
-      "art": "assets/img/works/memwal-cover.webp"
+      "cover": "assets/img/works/memwal-cover.webp",
+      "panel": true
     },
     {
       "id": "creators",
       "name": "Video Edit for Creators",
       "note": "Long-form and short-form edits for creators and brands.",
-      "cover": "assets/img/works/kan-qa-3-poster.jpg",
-      "art": "assets/img/works/kan-qa-3-poster.jpg"
+      "cover": "assets/img/works/goodchat-cover.jpg",
+      "panel": false,
+      "coverPos": "50% 70%"
     },
     {
       "id": "nft",
       "name": "NFT",
       "note": "Art direction for an NFT collection.",
       "cover": "assets/img/works/nft-cover.webp",
-      "art": "assets/img/works/nft-cover.webp"
+      "panel": false,
+      "coverPos": "50% 35%"
     },
     {
       "id": "motion",
@@ -242,14 +235,15 @@ window.SITE = {
       "note": "Motion graphics and LED visuals.",
       "cover": "assets/img/works/james-cover.webp",
       "coverPos": "18% 35%",
-      "art": "assets/img/works/james-cover.webp"
+      "panel": false
     },
     {
       "id": "side",
       "name": "Side Works",
       "note": "Freelance social, animation and design work.",
-      "cover": "assets/img/works/cvpad-1.jpg",
-      "art": "assets/img/works/cvpad-nft-3.jpg"
+      "cover": "assets/img/works/flomo-1.jpg",
+      "panel": false,
+      "coverPos": "50% 45%"
     }
   ],
   "projects": [
@@ -356,16 +350,13 @@ window.SITE = {
       ],
       "gallery": [
         "assets/img/identity-1.jpg",
-        "assets/img/hero.jpg",
         "assets/img/nidanas-1.jpg",
         "assets/img/cycle-1.jpg",
         "assets/img/forecast-1.jpg",
         "assets/img/menu-4.jpg",
         "assets/img/nidanas-3.jpg",
         "assets/img/cycle-6.jpg",
-        "assets/img/menu-1.jpg",
-        "assets/img/portrait.jpg",
-        "assets/img/identity-2.jpg"
+        "assets/img/menu-1.jpg"
       ]
     },
     {
@@ -631,7 +622,8 @@ window.SITE = {
         {
           "video": "assets/video/goodchat.mp4",
           "poster": "assets/img/works/goodchat-2-poster.jpg"
-        }
+        },
+        "assets/img/works/goodchat-cover.jpg"
       ]
     },
     {

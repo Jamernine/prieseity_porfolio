@@ -102,7 +102,9 @@
   // cluster card — one cover per category, shown in the shared cobalt tone (true colour on hover)
   const clusterCard = (c) => `
     <a class="work-card cluster-card reveal" href="${catHref(c)}" data-view>
-      <div class="work-card__media art-panel${c.artShape ? ' art-panel--' + c.artShape : ''}"><img src="${c.art || c.cover}" alt="${esc(c.name)}" loading="lazy"></div>
+      ${c.panel
+        ? `<div class="work-card__media art-panel${c.artShape ? ' art-panel--' + c.artShape : ''}"><img src="${c.cover}" alt="${esc(c.name)}" loading="lazy"></div>`
+        : `<div class="work-card__media">${coverImg(c.cover, c.name, c.coverPos)}</div>`}
       <div class="work-card__meta">
         <span class="work-card__idx">${pad(c.n)}</span>
         <h3 class="work-card__title">${esc(c.name)}</h3>
