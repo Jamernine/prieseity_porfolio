@@ -1,135 +1,249 @@
 /* ==========================================================================
-   Prieseity — site content
-   Edit everything here: copy, projects, articles, prices, contact.
-   Items marked  // EDIT  are placeholders you should replace with real info.
+   Prieseity — site content. Edit everything here.
+   categories = clusters on the Works page (one cover each, shared tone)
+   projects   = individual projects; `category` links them to a cluster
    ========================================================================== */
 window.SITE = {
-  name: 'Prieseity',
-  role: 'AI Films Maker',
-  location: 'Ho Chi Minh City, Vietnam',
-  email: '',                              // EDIT — leave '' to hide
-  phone: '',                              // EDIT — leave '' to hide
-  website: 'Prieseity',                   // label for the link back to this site
-  instagram: 'prieseity',
-  available: true,
-  year: '2026',
-  socials: [
-    { label: 'Instagram', href: 'https://www.instagram.com/prieseity/' }
+  "name": "Prieseity",
+  "role": "AI Films Maker",
+  "location": "Ho Chi Minh City, Vietnam",
+  "email": "",
+  "phone": "",
+  "website": "Prieseity",
+  "instagram": "prieseity",
+  "available": true,
+  "year": "2026",
+  "socials": [
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/prieseity/"
+    }
   ],
-
-  hero: {
-    intro: [
-      'I’m drawn to that moment when an imagined world starts to feel real.',
-      'AI film, art direction and digital design — from the first idea to the final frame.'
+  "hero": {
+    "intro": [
+      "I’m drawn to that moment when an imagined world starts to feel real.",
+      "AI film, art direction and digital design — from the first idea to the final frame."
     ],
-    title: 'AI Films Maker',
-    expertise: ['AI Film', 'Video Edit', 'Art Direction', 'Branding', 'UI/UX & Web', 'NFT']
-  },
-
-  about: {
-    label: 'Based in Ho Chi Minh City',
-    text: 'Prieseity is the practice of a visual designer who treats every brand as a small mythology — a symbol, a colour that glows, and a voice that speaks in carousels, menus and moving image.',
-    long: [
-      'I work at the meeting point of brand identity and editorial storytelling. Most of my projects begin with a single image — an ouroboros, a cobalt horizon, a lily dissolving into light — and grow into a system that can hold a whole year of content.',
-      'I founded Numen and built it end to end, and I work freelance, project by project, for everyone else. That has meant my own AI series Science of Doom, full AI productions like SANZØ, videos for InVideo and Sui hackathon teams, edits for creators, art direction for an NFT collection, and campaigns for clients in Switzerland and Vietnam. I care about rhythm, restraint and worlds that hold together from frame to frame.'
+    "title": "AI Films Maker",
+    "expertise": [
+      "AI Film",
+      "Video Edit",
+      "Art Direction",
+      "Branding",
+      "UI/UX & Web",
+      "NFT"
     ]
   },
-
-  // logo = SVG in assets/logos (drawn monochrome, tinted with `color` on hover)
-  tools: [
-    { name: 'Figma', logo: 'figma', color: '#a259ff' },
-    { name: 'Photoshop', logo: 'photoshop', color: '#31a8ff' },
-    { name: 'Illustrator', logo: 'illustrator', color: '#ff9a00' },
-    { name: 'After Effects', logo: 'after-effects', color: '#9999ff' },
-    { name: 'Framer', logo: 'framer', color: '#0a1033' },
-    { name: 'CapCut', logo: 'capcut', color: '#0a1033' },
-    { name: 'InVideo', logo: 'invideo', color: '#d9a400' }
+  "about": {
+    "label": "Based in Ho Chi Minh City",
+    "text": "Prieseity is the studio name of an AI films maker — I write, generate and cut short films, brand worlds and product videos, from the first idea to the final frame.",
+    "long": [
+      "I work at the meeting point of brand identity and editorial storytelling. Most of my projects begin with a single image — an ouroboros, a cobalt horizon, a lily dissolving into light — and grow into a system that can hold a whole year of content.",
+      "I founded Numen and built it end to end, and I work freelance, project by project, for everyone else. That has meant my own AI series Science of Doom, full AI productions like SANZØ, videos for InVideo and Sui hackathon teams, edits for creators, art direction for an NFT collection, and campaigns for clients in Switzerland and Vietnam. I care about rhythm, restraint and worlds that hold together from frame to frame."
+    ]
+  },
+  "tools": [
+    {
+      "name": "Figma",
+      "logo": "figma"
+    },
+    {
+      "name": "Photoshop",
+      "logo": "photoshop"
+    },
+    {
+      "name": "Illustrator",
+      "logo": "illustrator"
+    },
+    {
+      "name": "After Effects",
+      "logo": "after-effects"
+    },
+    {
+      "name": "Framer",
+      "logo": "framer"
+    },
+    {
+      "name": "CapCut",
+      "logo": "capcut"
+    },
+    {
+      "name": "InVideo",
+      "logo": "invideo"
+    }
   ],
-
-  // Empty for now — add up to 3 items like { value: 6, suffix: '+', label: '...' } to show the section again.
-  stats: [],
-
-  // `projects` = slugs from the projects list below, shown as links under each service
-  services: [
-    { name: 'AI Film & Video Production', desc: 'I create AI-powered films and videos from concept to final cut, developing the story, characters, and environments and keeping them visually consistent from shot to shot.', tags: ['Story', 'Characters', 'Environments', 'Edit'], projects: ['science-of-doom', 'sanzo', 'invideo', 'memwal', 'sui-hackathon', 'skillname', 'kan-dental', 'tina-kol', 'goodchat', 'james'] },
-    { name: 'Art Direction & Visual Design', desc: 'I develop visual concepts and create campaign imagery, brand graphics, and social content using a mix of AI image generation and hands-on design.', tags: ['Campaigns', 'Brand graphics', 'Social'], projects: ['numen', 'sanzo', 'cvmech-nft', 'cvpad', 'cv-alpha', 'flomo', 'sc-studios'] },
-    { name: 'UI/UX & Web Design', desc: 'I design websites and digital interfaces, from user flows and wireframes to polished, responsive designs.', tags: ['User flows', 'Wireframes', 'Responsive UI'], projects: ['numen', 'agentlauncher', 'design-system'] },
-    { name: 'AI Agents & Workflow Automation', desc: 'I build AI-assisted workflows for creative production and day-to-day operations, helping teams automate repetitive tasks and move work through each stage.', tags: ['AI agents', 'Automation', 'Pipelines'], projects: [] },
-    { name: 'Business Operations & Sales Support', desc: 'I help small teams organize their sales and admin workflows, set up reporting, and build practical systems for managing day-to-day work.', tags: ['Sales ops', 'Reporting', 'Systems'], projects: [] }
+  "stats": [],
+  "services": [
+    {
+      "name": "AI Film & Video Production",
+      "desc": "I create AI-powered films and videos from concept to final cut, developing the story, characters, and environments and keeping them visually consistent from shot to shot.",
+      "tags": [
+        "Story",
+        "Characters",
+        "Environments",
+        "Edit"
+      ],
+      "projects": [
+        "science-of-doom",
+        "film-watcher",
+        "film-walt",
+        "film-softpaws",
+        "sanzo",
+        "invideo",
+        "dieps",
+        "memwal",
+        "skillname",
+        "james"
+      ]
+    },
+    {
+      "name": "Art Direction & Visual Design",
+      "desc": "I develop visual concepts and create campaign imagery, brand graphics, and social content using a mix of AI image generation and hands-on design.",
+      "tags": [
+        "Campaigns",
+        "Brand graphics",
+        "Social"
+      ],
+      "projects": [
+        "numen",
+        "sanzo",
+        "cvmech-nft",
+        "cvpad",
+        "cv-alpha",
+        "flomo",
+        "sc-studios"
+      ]
+    },
+    {
+      "name": "UI/UX & Web Design",
+      "desc": "I design websites and digital interfaces, from user flows and wireframes to polished, responsive designs.",
+      "tags": [
+        "User flows",
+        "Wireframes",
+        "Responsive UI"
+      ],
+      "projects": [
+        "numen",
+        "agentlauncher"
+      ]
+    },
+    {
+      "name": "AI Agents & Workflow Automation",
+      "desc": "I build AI-assisted workflows for creative production and day-to-day operations, helping teams automate repetitive tasks and move work through each stage.",
+      "tags": [
+        "AI agents",
+        "Automation",
+        "Pipelines"
+      ],
+      "projects": []
+    },
+    {
+      "name": "Business Operations & Sales Support",
+      "desc": "I help small teams organize their sales and admin workflows, set up reporting, and build practical systems for managing day-to-day work.",
+      "tags": [
+        "Sales ops",
+        "Reporting",
+        "Systems"
+      ],
+      "projects": []
+    }
   ],
-
-  process: [
-    { n: '01', title: 'Listen', desc: 'A focused call and a short questionnaire. We find the one feeling the brand must leave behind.' },
-    { n: '02', title: 'Shape', desc: 'Two to three visual directions, then one refined system — symbol, palette, type and image rules.' },
-    { n: '03', title: 'Release', desc: 'Final files, templates and a living guide so your team can keep the world consistent.' }
+  "process": [
+    {
+      "n": "01",
+      "title": "Listen",
+      "desc": "A focused call and a short questionnaire. We find the one feeling the brand must leave behind."
+    },
+    {
+      "n": "02",
+      "title": "Shape",
+      "desc": "Two to three visual directions, then one refined system — symbol, palette, type and image rules."
+    },
+    {
+      "n": "03",
+      "title": "Release",
+      "desc": "Final files, templates and a living guide so your team can keep the world consistent."
+    }
   ],
-
-  // Pricing is hidden. To show it again, add plans like:
-  // { name: 'Premium', price: '$2,400', per: '/ project', desc: '...', features: ['...'], cta: 'Book a call', popular: true }
-  pricing: [],
-
-  faqs: [
-    { q: 'What kind of projects do you take on?', a: 'AI films and videos, art direction and campaign visuals, websites and digital interfaces — plus AI workflows and operations support for small teams. I am happiest with brands that have a story worth telling.' },
-    { q: 'How long does a typical project take?', a: 'A short AI film or a campaign usually takes one to three weeks. A website takes three to six weeks depending on the number of pages and how much imagery we create.' },
-    { q: 'Do you work in both English and Vietnamese?', a: 'Yes. Every system I design is tested with Vietnamese diacritics from day one, so the type never breaks in either language.' },
-    { q: 'Can you work with my existing brand?', a: 'Absolutely. Many projects start by extending an existing identity into new formats — carousels, menus, motion — without losing what already works.' },
-    { q: 'What do I receive at the end?', a: 'Organised source files, exports for every channel, editable templates and a concise guide that explains how to use it all.' },
-    { q: 'How do we start?', a: 'Send a DM on Instagram @prieseity with a few lines about your brand. I will reply within two working days with next steps.' }
+  "pricing": [],
+  "faqs": [
+    {
+      "q": "What kind of projects do you take on?",
+      "a": "AI films and videos, art direction and campaign visuals, websites and digital interfaces — plus AI workflows and operations support for small teams. I am happiest with brands that have a story worth telling."
+    },
+    {
+      "q": "How long does a typical project take?",
+      "a": "A short AI film or a campaign usually takes one to three weeks. A website takes three to six weeks depending on the number of pages and how much imagery we create."
+    },
+    {
+      "q": "Do you work in both English and Vietnamese?",
+      "a": "Yes. Every system I design is tested with Vietnamese diacritics from day one, so the type never breaks in either language."
+    },
+    {
+      "q": "Can you work with my existing brand?",
+      "a": "Absolutely. Many projects start by extending an existing identity into new formats — carousels, menus, motion — without losing what already works."
+    },
+    {
+      "q": "What do I receive at the end?",
+      "a": "Organised source files, exports for every channel, editable templates and a concise guide that explains how to use it all."
+    },
+    {
+      "q": "How do we start?",
+      "a": "Send a DM on Instagram @prieseity with a few lines about your brand. I will reply within two working days with next steps."
+    }
   ],
-
-  // Works are grouped by these categories, in this order (Works page + project meta).
-  categories: [
+  "categories": [
     {
       "id": "ai-film",
-      "name": "AI Film",
-      "note": "Original series and short films, produced end to end with AI."
+      "name": "AI Films",
+      "note": "Original series and short films, made end to end with AI.",
+      "cover": "assets/img/works/sod-ep01-poster.jpg"
     },
     {
       "id": "numen",
       "name": "Numen",
-      "note": "My own brand — as founder."
+      "note": "My own brand — as founder.",
+      "cover": "assets/img/identity-1.jpg"
     },
     {
-      "id": "sanzo",
-      "name": "SANZØ",
-      "note": "Full AI production, in collaboration."
+      "id": "hackathon",
+      "name": "Hackathon",
+      "note": "Built against the clock — characters, films and products.",
+      "cover": "assets/img/works/sanzo-1.webp"
     },
     {
-      "id": "invideo",
-      "name": "InVideo",
-      "note": "AI video for the InVideo platform."
-    },
-    {
-      "id": "sui",
-      "name": "SUI & AI SaaS Motion",
-      "note": "Hackathon and SaaS launch films, in collaboration with Harry."
+      "id": "saas",
+      "name": "Videos & SaaS Marketing",
+      "note": "Product films, explainers and launch videos for software and Web3 teams.",
+      "cover": "assets/img/works/memwal-1.jpg"
     },
     {
       "id": "creators",
       "name": "Video Edit for Creators",
-      "note": "Long-form and short-form edits — split by client."
+      "note": "Long-form and short-form edits for creators and brands.",
+      "cover": "assets/img/works/kan-qa-3-poster.jpg"
     },
     {
       "id": "nft",
       "name": "NFT",
-      "note": "Art direction for an NFT collection."
+      "note": "Art direction for an NFT collection.",
+      "cover": "assets/img/works/nft-cover.webp"
     },
     {
-      "id": "james",
-      "name": "James",
-      "note": "Motion and LED visuals."
+      "id": "motion",
+      "name": "Motion Design",
+      "note": "Motion graphics and LED visuals.",
+      "cover": "assets/img/works/james-cover.webp",
+      "coverPos": "18% 35%"
     },
     {
       "id": "side",
       "name": "Side Works",
-      "note": "Freelance social, animation and design work."
+      "note": "Freelance social, animation and design work.",
+      "cover": "assets/img/works/cvpad-1.jpg"
     }
   ],
-
-  // `featured: true` = shown on the homepage (in this order). `engagement` overrides the default "Freelance · Project-based" chip.
-  // Gallery items: 'image path' | { video, poster, label?, noAutoplay? } | { youtube: 'VIDEO_ID', title }
-  // coverVideo plays on hover; coverStrip = { video, times[] } builds a cover from several frames of one video.
-  projects: [
+  "projects": [
     {
       "slug": "science-of-doom",
       "category": "ai-film",
@@ -154,6 +268,65 @@ window.SITE = {
         "assets/img/works/sod-cover.png",
         "assets/img/works/sod-ep01-poster.jpg",
         "assets/img/works/sod-banner.jpg"
+      ]
+    },
+    {
+      "slug": "film-watcher",
+      "category": "ai-film",
+      "title": "Choose a Watcher — Ep. 1",
+      "discipline": "AI Short Film",
+      "client": "Original",
+      "role": "Story, AI visuals, edit",
+      "engagement": "Original series",
+      "year": "2026",
+      "cover": "assets/img/works/film-watcher-poster.jpg",
+      "summary": "An interactive-style AI story: the viewer picks who watches over the hero.",
+      "body": [
+        "Written, generated and cut by me — characters, environments and pacing kept consistent from shot to shot."
+      ],
+      "gallery": [
+        "assets/img/works/film-watcher-poster.jpg"
+      ]
+    },
+    {
+      "slug": "film-walt",
+      "category": "ai-film",
+      "title": "Walt — Train Zombie",
+      "discipline": "AI Short Film",
+      "client": "Original",
+      "role": "Story, AI visuals, edit",
+      "engagement": "Original series",
+      "year": "2026",
+      "cover": "assets/img/works/film-walt-poster.jpg",
+      "summary": "A zombie short on a moving train, produced end to end with AI.",
+      "body": [
+        "Written, generated and cut by me — characters, environments and pacing kept consistent from shot to shot."
+      ],
+      "gallery": [
+        "assets/img/works/film-walt-poster.jpg"
+      ]
+    },
+    {
+      "slug": "film-softpaws",
+      "category": "ai-film",
+      "title": "Soft Paws — Part 1",
+      "discipline": "AI Short Film",
+      "client": "Original",
+      "role": "Story, AI visuals, edit",
+      "engagement": "Original series",
+      "year": "2026",
+      "cover": "assets/img/works/film-softpaws-poster.jpg",
+      "coverVideo": "assets/video/film-softpaws.mp4",
+      "summary": "A first chapter of an animated AI story about a small, brave animal.",
+      "body": [
+        "Written, generated and cut by me — characters, environments and pacing kept consistent from shot to shot."
+      ],
+      "gallery": [
+        {
+          "video": "assets/video/film-softpaws.mp4",
+          "poster": "assets/img/works/film-softpaws-poster.jpg",
+          "noAutoplay": true
+        }
       ]
     },
     {
@@ -188,7 +361,7 @@ window.SITE = {
     },
     {
       "slug": "sanzo",
-      "category": "sanzo",
+      "category": "hackathon",
       "featured": true,
       "title": "SANZØ",
       "discipline": "Full AI Production — Character, Brand & Film",
@@ -229,7 +402,7 @@ window.SITE = {
     },
     {
       "slug": "invideo",
-      "category": "invideo",
+      "category": "hackathon",
       "featured": true,
       "title": "InVideo",
       "discipline": "AI Video Production",
@@ -262,46 +435,15 @@ window.SITE = {
       }
     },
     {
-      "slug": "memwal",
-      "category": "sui",
-      "featured": true,
-      "title": "DIEPS — MemWal",
-      "discipline": "Hackathon Product Film — Sui",
-      "client": "DIEPS",
-      "role": "Script, motion, edit (collab with Harry)",
-      "engagement": "Collab · Hackathon",
-      "year": "2026",
-      "cover": "assets/img/works/memwal-cover.webp",
-      "summary": "Launch videos for MemWal — an AI memory layer that lets you “ask your forms” — for the DIEPS team at Sui Overflow.",
-      "body": [
-        "MemWal turns scattered form submissions into something you can simply talk to. The films walk through that idea step by step: the problem, the interface, and the walrus mascot that keeps everything friendly.",
-        "Made in collaboration with Harry: screen recordings, motion design and AI-generated scenes, with sound design timed to each interaction."
-      ],
-      "gallery": [
-        {
-          "youtube": "ooyE5X71OBI",
-          "title": "DIEPS — MemWal"
-        },
-        "assets/img/works/memwal-cover.webp",
-        {
-          "video": "assets/video/memwal-bg.mp4",
-          "poster": "assets/img/works/memwal-bg-poster.jpg",
-          "label": "Background loop"
-        },
-        "assets/img/works/memwal-1.jpg",
-        "assets/img/works/memwal-2.jpg"
-      ]
-    },
-    {
       "slug": "sui-hackathon",
-      "category": "sui",
+      "category": "hackathon",
       "title": "SUI Hackathon",
       "discipline": "Hackathon Pitch Film — Sui Overflow",
       "client": "Sui Overflow",
       "role": "Script, motion, edit (collab with Harry)",
       "engagement": "Collab · Hackathon",
       "year": "2026",
-      "cover": "https://img.youtube.com/vi/Yk_pwQTSJBI/maxresdefault.jpg",
+      "cover": "https://img.youtube.com/vi/Yk_pwQTSJBI/hqdefault.jpg",
       "summary": "A pitch film for a Sui Overflow hackathon project — from the everyday problem to the product that solves it.",
       "body": [
         "Hackathon films have one job: make judges understand the problem and the product in a couple of minutes.",
@@ -317,8 +459,56 @@ window.SITE = {
       ]
     },
     {
+      "slug": "dieps",
+      "category": "saas",
+      "title": "DIEPS",
+      "discipline": "Product Film",
+      "client": "DIEPS",
+      "role": "Script, motion, edit (collab with Harry)",
+      "engagement": "Collab",
+      "year": "2026",
+      "cover": "https://img.youtube.com/vi/ooyE5X71OBI/hqdefault.jpg",
+      "summary": "A product film for DIEPS — the problem, the product and the moment it clicks, in a couple of minutes.",
+      "body": [
+        "Made in collaboration with Harry: clean UI motion, AI-generated scenes and a voice-over-led story that keeps a technical product easy to follow."
+      ],
+      "gallery": [
+        {
+          "youtube": "ooyE5X71OBI",
+          "title": "DIEPS"
+        }
+      ]
+    },
+    {
+      "slug": "memwal",
+      "category": "saas",
+      "featured": true,
+      "title": "MemWal",
+      "discipline": "AI Product Film",
+      "client": "MemWal",
+      "role": "Script, motion, edit (collab with Harry)",
+      "engagement": "Collab",
+      "year": "2026",
+      "cover": "assets/img/works/memwal-cover.webp",
+      "summary": "Launch videos for MemWal — an AI memory layer that lets you “ask your forms”.",
+      "body": [
+        "MemWal turns scattered form submissions into something you can simply talk to. The films walk through that idea step by step: the problem, the interface, and the walrus mascot that keeps everything friendly.",
+        "Made in collaboration with Harry: screen recordings, motion design and AI-generated scenes, with sound design timed to each interaction."
+      ],
+      "gallery": [
+        "assets/img/works/memwal-cover.webp",
+        {
+          "video": "assets/video/memwal-bg.mp4",
+          "poster": "assets/img/works/memwal-bg-poster.jpg",
+          "label": "Background loop"
+        },
+        "assets/img/works/memwal-1.jpg",
+        "assets/img/works/memwal-2.jpg"
+      ]
+    },
+    {
       "slug": "skillname",
-      "category": "sui",
+      "category": "saas",
       "title": "Skillnamed",
       "discipline": "AI SaaS Motion",
       "client": "Skillnamed",
@@ -338,6 +528,32 @@ window.SITE = {
           "poster": "assets/img/works/skillname-poster.jpg"
         },
         "assets/img/works/memwal-4.jpg"
+      ]
+    },
+    {
+      "slug": "tina-kol",
+      "category": "saas",
+      "featured": true,
+      "title": "Tina — KOL on X",
+      "discipline": "Long-form Explainers — Sui Ecosystem",
+      "client": "Tina (Twitter / X KOL)",
+      "role": "Editing, compositing, motion graphics",
+      "year": "2026",
+      "cover": "assets/img/works/portfolio0427-poster.jpg",
+      "summary": "Three explainer videos on Sui for a crypto KOL on X — one fully composited SpongeBob-style episode and two talking-head pieces.",
+      "body": [
+        "The DeepBook episode is a full compose: a SpongeBob-style underwater world with animated characters explaining how Sui’s unified liquidity layer works.",
+        "The other two are talk videos — Tina on camera, cut with animated scenes, on-screen type and product shots so a dense DeFi topic stays easy to follow."
+      ],
+      "gallery": [
+        "assets/img/works/portfolio0427-poster.jpg",
+        "assets/img/works/tina-talk-1-poster.jpg",
+        "assets/img/works/deepbook-poster.jpg",
+        "assets/img/works/tina-scene-3.jpg",
+        "assets/img/works/tina-scene-5.jpg",
+        "assets/img/works/tina-scene-7.jpg",
+        "assets/img/works/tina-scene-12.jpg",
+        "assets/img/works/deepbook-scene.jpg"
       ]
     },
     {
@@ -385,32 +601,6 @@ window.SITE = {
           "poster": "assets/img/works/kan-short-1-poster.jpg",
           "label": "Short-form — patient story"
         }
-      ]
-    },
-    {
-      "slug": "tina-kol",
-      "category": "creators",
-      "featured": true,
-      "title": "Tina — KOL on X",
-      "discipline": "Long-form Explainers — Sui Ecosystem",
-      "client": "Tina (Twitter / X KOL)",
-      "role": "Editing, compositing, motion graphics",
-      "year": "2026",
-      "cover": "assets/img/works/portfolio0427-poster.jpg",
-      "summary": "Three explainer videos on Sui for a crypto KOL on X — one fully composited SpongeBob-style episode and two talking-head pieces.",
-      "body": [
-        "The DeepBook episode is a full compose: a SpongeBob-style underwater world with animated characters explaining how Sui’s unified liquidity layer works.",
-        "The other two are talk videos — Tina on camera, cut with animated scenes, on-screen type and product shots so a dense DeFi topic stays easy to follow."
-      ],
-      "gallery": [
-        "assets/img/works/portfolio0427-poster.jpg",
-        "assets/img/works/tina-talk-1-poster.jpg",
-        "assets/img/works/deepbook-poster.jpg",
-        "assets/img/works/tina-scene-3.jpg",
-        "assets/img/works/tina-scene-5.jpg",
-        "assets/img/works/tina-scene-7.jpg",
-        "assets/img/works/tina-scene-12.jpg",
-        "assets/img/works/deepbook-scene.jpg"
       ]
     },
     {
@@ -465,10 +655,10 @@ window.SITE = {
     },
     {
       "slug": "james",
-      "category": "james",
+      "category": "motion",
       "featured": true,
-      "title": "James",
-      "discipline": "Motion & LED Visuals",
+      "title": "James — Birthday LED",
+      "discipline": "Motion Design & LED Visuals",
       "client": "Fan project",
       "role": "Motion design, LED compositing",
       "year": "2026",
@@ -503,7 +693,8 @@ window.SITE = {
         },
         "assets/img/works/james-1-poster.jpg",
         "assets/img/works/james-3-poster.jpg"
-      ]
+      ],
+      "coverPos": "18% 35%"
     },
     {
       "slug": "cvpad",
@@ -615,7 +806,7 @@ window.SITE = {
       "slug": "sc-studios",
       "category": "side",
       "title": "S.C Studios",
-      "discipline": "Seasonal Campaign",
+      "discipline": "Seasonal Campaign & Lookbook",
       "client": "S.C Studios",
       "role": "Concept, visual design",
       "year": "2026",
@@ -623,13 +814,16 @@ window.SITE = {
       "summary": "New Year and Lunar New Year greetings for a fashion label — ribbon numerals, leather texture and letterpress cards.",
       "body": [
         "Two moods for one season. The New Year piece draws 2026 as a single flowing ribbon over deep red leather; the Lunar New Year cards feel like a printed letter tied with a bow.",
-        "Both were designed as feed posts and stories, with type sized to stay legible on a phone."
+        "Both were designed as feed posts and stories, with type sized to stay legible on a phone.",
+        "The label’s Pre-fall 2026 lookbook continues the red: “Modern Allure” portraits on a single saturated backdrop."
       ],
       "gallery": [
         "assets/img/works/sc-1.jpg",
         "assets/img/works/sc-2.jpg",
         "assets/img/works/sc-3.jpg",
-        "assets/img/works/sc-4.jpg"
+        "assets/img/works/sc-4.jpg",
+        "assets/img/works/sc-5.jpg",
+        "assets/img/works/sc-6.jpg"
       ]
     },
     {
@@ -655,100 +849,104 @@ window.SITE = {
         "assets/img/works/ideolux-6.jpg",
         "assets/img/works/ideolux-7.jpg",
         "assets/img/works/ideolux-8.jpg",
-        "assets/img/works/ideolux-9.jpg"
+        "assets/img/works/ideolux-9.jpg",
+        "assets/img/works/ideolux-book-1.jpg",
+        "assets/img/works/ideolux-book-2.jpg",
+        "assets/img/works/ideolux-book-3.jpg",
+        "assets/img/works/ideolux-book-4.jpg",
+        "assets/img/works/ideolux-book-5.jpg",
+        "assets/img/works/ideolux-book-6.jpg",
+        "assets/img/works/ideolux-book-7.jpg",
+        "assets/img/works/ideolux-book-8.jpg",
+        "assets/img/works/ideolux-book-9.jpg",
+        "assets/img/works/ideolux-book-10.jpg"
       ]
-    },
+    }
+  ],
+  "posts": [
     {
-      "slug": "design-system",
-      "category": "side",
-      "title": "Lunar Design System",
-      "discipline": "Design System",
-      "client": "Astrology app",
-      "role": "Design system, illustration",
-      "year": "2026",
-      "cover": "assets/img/works/ds-1.jpg",
-      "summary": "A warm, Eastern-inspired design system for a Vietnamese astrology app — tokens, components and illustrations.",
-      "body": [
-        "The system starts from foundations: a DM Sans type scale, six colour ramps and semantic tokens for surfaces, states and feedback.",
-        "On top sit buttons, icons and text fields, plus a set of illustrations — waves, auspicious clouds and layered mountains — that give the product its character."
+      "slug": "designing-the-sacred-for-a-scrolling-feed",
+      "title": "Designing the sacred for a scrolling feed",
+      "date": "Oct 28, 2026",
+      "tags": [
+        "Art Direction",
+        "Social"
       ],
-      "gallery": [
-        "assets/img/works/ds-1.jpg",
-        "assets/img/works/ds-2.jpg",
-        "assets/img/works/ds-3.jpg",
-        "assets/img/works/ds-4.jpg",
-        "assets/img/works/ds-5.jpg",
-        "assets/img/works/ds-6.jpg"
+      "cover": "assets/img/nidanas-3.jpg",
+      "body": [
+        "A feed rewards speed. Spiritual ideas reward slowness. The work is to build a bridge between the two without cheapening either.",
+        "My rule is simple: one idea per slide, and one image that can hold silence. The swipe becomes a breath, not a skip.",
+        "Frames, stars and markers are not decoration. They are instructions for the eye — look here, now here — the same way a teacher points."
+      ]
+    },
+    {
+      "slug": "why-cobalt",
+      "title": "Why cobalt: building a colour that glows",
+      "date": "Sep 30, 2026",
+      "tags": [
+        "Colour",
+        "Identity"
+      ],
+      "cover": "assets/img/cycle-3.jpg",
+      "body": [
+        "Cobalt is a strange blue. On screen it almost vibrates, especially when it bleeds out of near-black. That vibration is the point.",
+        "Instead of flat fills, I treat cobalt as light: it lives at the edges of the frame, rising from the bottom like dawn under water.",
+        "Neon green is kept rare on purpose. When it appears, it means something."
+      ]
+    },
+    {
+      "slug": "twelve-links-one-system",
+      "title": "Twelve links, one system",
+      "date": "Aug 21, 2026",
+      "tags": [
+        "Campaign",
+        "Process"
+      ],
+      "cover": "assets/img/nidanas-5.jpg",
+      "body": [
+        "A twelve-part campaign fails if chapter nine feels like a different brand. The first week went entirely into rules, not posts.",
+        "Fixed: the type stack, the frame grammar, the caption band. Free: the landscape, the light, the question.",
+        "That split let the series stay surprising without ever losing its voice."
+      ]
+    },
+    {
+      "slug": "type-that-carries-diacritics",
+      "title": "Type that carries diacritics with grace",
+      "date": "Jul 12, 2026",
+      "tags": [
+        "Typography"
+      ],
+      "cover": "assets/img/cycle-6.jpg",
+      "body": [
+        "Vietnamese stacks accents above and below the line. Many beautiful display faces simply collide.",
+        "I test every candidate typeface with the hardest words first — the ones with ợ, ẫn, ậ — before I fall in love with it.",
+        "Generous line height and a localised cut of Urbanist became the backbone of the Numen system."
+      ]
+    },
+    {
+      "slug": "the-menu-as-a-ritual-object",
+      "title": "The menu as a ritual object",
+      "date": "Jun 03, 2026",
+      "tags": [
+        "Print",
+        "Editorial"
+      ],
+      "cover": "assets/img/menu-1.jpg",
+      "body": [
+        "A menu is the first thing a guest reads and the last thing a designer thinks about. I wanted to reverse that.",
+        "Each section opens like a chapter with a number, a name and a promise. Ordering becomes choosing a path.",
+        "The same layouts live on paper, on a tablet and on Instagram, so the ritual travels with the brand."
       ]
     }
   ],
-
-  posts: [
-    {
-      slug: 'designing-the-sacred-for-a-scrolling-feed',
-      title: 'Designing the sacred for a scrolling feed',
-      date: 'Oct 28, 2026',
-      tags: ['Art Direction', 'Social'],
-      cover: 'assets/img/nidanas-3.jpg',
-      body: [
-        'A feed rewards speed. Spiritual ideas reward slowness. The work is to build a bridge between the two without cheapening either.',
-        'My rule is simple: one idea per slide, and one image that can hold silence. The swipe becomes a breath, not a skip.',
-        'Frames, stars and markers are not decoration. They are instructions for the eye — look here, now here — the same way a teacher points.'
-      ]
-    },
-    {
-      slug: 'why-cobalt',
-      title: 'Why cobalt: building a colour that glows',
-      date: 'Sep 30, 2026',
-      tags: ['Colour', 'Identity'],
-      cover: 'assets/img/cycle-3.jpg',
-      body: [
-        'Cobalt is a strange blue. On screen it almost vibrates, especially when it bleeds out of near-black. That vibration is the point.',
-        'Instead of flat fills, I treat cobalt as light: it lives at the edges of the frame, rising from the bottom like dawn under water.',
-        'Neon green is kept rare on purpose. When it appears, it means something.'
-      ]
-    },
-    {
-      slug: 'twelve-links-one-system',
-      title: 'Twelve links, one system',
-      date: 'Aug 21, 2026',
-      tags: ['Campaign', 'Process'],
-      cover: 'assets/img/nidanas-5.jpg',
-      body: [
-        'A twelve-part campaign fails if chapter nine feels like a different brand. The first week went entirely into rules, not posts.',
-        'Fixed: the type stack, the frame grammar, the caption band. Free: the landscape, the light, the question.',
-        'That split let the series stay surprising without ever losing its voice.'
-      ]
-    },
-    {
-      slug: 'type-that-carries-diacritics',
-      title: 'Type that carries diacritics with grace',
-      date: 'Jul 12, 2026',
-      tags: ['Typography'],
-      cover: 'assets/img/cycle-6.jpg',
-      body: [
-        'Vietnamese stacks accents above and below the line. Many beautiful display faces simply collide.',
-        'I test every candidate typeface with the hardest words first — the ones with ợ, ẫn, ậ — before I fall in love with it.',
-        'Generous line height and a localised cut of Urbanist became the backbone of the Numen system.'
-      ]
-    },
-    {
-      slug: 'the-menu-as-a-ritual-object',
-      title: 'The menu as a ritual object',
-      date: 'Jun 03, 2026',
-      tags: ['Print', 'Editorial'],
-      cover: 'assets/img/menu-1.jpg',
-      body: [
-        'A menu is the first thing a guest reads and the last thing a designer thinks about. I wanted to reverse that.',
-        'Each section opens like a chapter with a number, a name and a promise. Ordering becomes choosing a path.',
-        'The same layouts live on paper, on a tablet and on Instagram, so the ritual travels with the brand.'
-      ]
-    }
-  ],
-
-  // Empty for now — add rows like { role: 'Art Director', place: 'Numen', time: '2025 — Present' } to show the section.
-  experience: [],
-
-  // Empty for now — add rows like { title: 'Numen identity system', meta: 'Brand · 2026' } to show the section.
-  highlights: []
+  "experience": [],
+  "highlights": [],
+  "doodles": [
+    "doodle-1.png",
+    "doodle-2.png",
+    "doodle-3.png",
+    "doodle-4.png",
+    "doodle-5.png",
+    "doodle-6.png"
+  ]
 };
