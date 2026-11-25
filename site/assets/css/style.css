@@ -345,3 +345,11 @@ body.menu-open { overflow: hidden; }
   .appear, .reveal { transform: none !important; opacity: 1 !important; }
   html { scroll-behavior: auto; }
 }
+
+/* ---------- loading screen: dot-matrix morph in a framed window ---------- */
+.loader { position: fixed; inset: 0; z-index: 200; display: grid; place-items: center; background: var(--blue); transition: opacity .8s var(--ease), visibility .8s; }
+.loader::after { content: ''; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(70% 60% at 50% 50%, transparent 40%, rgba(0, 0, 40, .35)); }
+.loader__frame { width: min(560px, 82vw); aspect-ratio: 2.1 / 1; border: 1.5px solid rgba(255, 255, 255, .85); position: relative; z-index: 1; }
+.loader__frame canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+.loader.is-done { opacity: 0; visibility: hidden; }
+html.is-loading, html.is-loading body { overflow: hidden; }
