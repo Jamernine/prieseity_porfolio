@@ -12,3 +12,7 @@ desktop.ini
 .DS_Store
 *.log
 !/vercel.json
+
+.vercel
+.env*
+!/.vercelignore
