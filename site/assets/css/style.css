@@ -346,25 +346,24 @@ body.menu-open { overflow: hidden; }
   html { scroll-behavior: auto; }
 }
 
-/* ---------- loading screen: frame draws, dots scan in, flare, forms ---------- */
-.loader { position: fixed; inset: 0; z-index: 200; display: grid; place-items: center; background: var(--blue); transition: opacity .8s var(--ease), visibility .8s; }
-.loader::after { content: ''; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(70% 60% at 50% 50%, transparent 40%, rgba(0, 0, 40, .35)); }
-.loader__frame { width: min(620px, 84vw); aspect-ratio: 2.1 / 1; position: relative; z-index: 1; overflow: visible; }
-/* frame lines draw in: top/bottom grow from the left, sides fade in */
-.loader__frame::before { content: ''; position: absolute; inset: 0; border: 1.5px solid rgba(255,255,255,.9); clip-path: inset(0 100% 0 0); animation: lf-draw .55s .05s cubic-bezier(.65,0,.35,1) forwards; }
-@keyframes lf-draw { to { clip-path: inset(0 0 0 0); } }
-/* faint CRT scanlines over the matrix */
-.loader__frame::after { content: ''; position: absolute; inset: 0; pointer-events: none; background: repeating-linear-gradient(180deg, rgba(255,255,255,.05) 0 1px, transparent 1px 3px); mix-blend-mode: screen; }
-.loader__frame canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
-.loader__flare { position: absolute; left: 50%; top: 50%; width: 22px; height: 22px; margin: -11px; border-radius: 50%; background: #fff; opacity: 0; pointer-events: none;
-  box-shadow: 0 0 30px 12px rgba(255,255,255,.85), 0 0 120px 60px rgba(124,184,255,.55);
-  background-image: linear-gradient(0deg, transparent 49%, #fff 50%, transparent 51%), linear-gradient(90deg, transparent 49%, #fff 50%, transparent 51%); }
-.loader__flare::before, .loader__flare::after { content: ''; position: absolute; left: 50%; top: 50%; width: 520px; height: 1px; margin-left: -260px; background: linear-gradient(90deg, transparent, rgba(255,255,255,.9), transparent); transform: rotate(28deg); }
-.loader__flare::after { transform: rotate(-62deg); width: 360px; margin-left: -180px; }
-.loader__streak { position: absolute; top: -40%; bottom: -40%; left: -30%; width: 90px; opacity: 0; pointer-events: none; transform: skewX(-24deg); background: linear-gradient(90deg, transparent, rgba(255,255,255,.55), transparent); filter: blur(6px); }
-.loader.is-flare .loader__flare { animation: lf-flare .7s ease-out forwards; }
-.loader.is-flare .loader__streak { animation: lf-streak .75s .2s ease-in-out forwards; }
-@keyframes lf-flare { 0% { opacity: 0; transform: scale(.2); } 30% { opacity: 1; transform: scale(1.1); } 100% { opacity: 0; transform: scale(.6) rotate(25deg); } }
-@keyframes lf-streak { 0% { opacity: 0; left: -30%; } 30% { opacity: 1; } 100% { opacity: 0; left: 115%; } }
+/* ---------- loading screen: retro CRT, metamorphosis in ASCII ---------- */
+.loader { position: fixed; inset: 0; z-index: 200; display: grid; place-items: center; background: var(--blue); transition: opacity .7s var(--ease), visibility .7s; }
+.loader::before { content: ''; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(75% 70% at 50% 50%, transparent 45%, rgba(0, 0, 30, .45)); }
+/* the screen: bulged glass with rounded CRT corners */
+.loader__tv { position: relative; z-index: 1; width: min(780px, 92vw); aspect-ratio: 2.2 / 1; border-radius: 5% / 11%; overflow: hidden; animation: tv-flicker 2.4s steps(1) infinite; }
+.loader__tv canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+.loader__glass { position: absolute; inset: 0; pointer-events: none; border-radius: inherit;
+  background:
+    repeating-linear-gradient(180deg, rgba(0,0,40,.22) 0 1px, transparent 1px 3px),
+    radial-gradient(120% 90% at 50% 50%, transparent 55%, rgba(0, 0, 40, .55) 100%),
+    radial-gradient(60% 40% at 30% 18%, rgba(255,255,255,.12), transparent 70%);
+  box-shadow: inset 0 0 40px rgba(0,0,40,.6), inset 0 0 0 2px rgba(255,255,255,.06); }
+/* slow rolling band */
+.loader__glass::after { content: ''; position: absolute; left: 0; right: 0; height: 18%; top: -20%; background: linear-gradient(180deg, transparent, rgba(255,255,255,.07), transparent); animation: tv-roll 2.6s linear infinite; }
+@keyframes tv-roll { to { top: 110%; } }
+@keyframes tv-flicker { 0%, 100% { opacity: 1; } 47% { opacity: .94; } 48% { opacity: 1; } 73% { opacity: .97; } }
+/* CRT power-off: squeeze to a line, then to a dot */
+.loader.is-off .loader__tv { animation: tv-off .5s cubic-bezier(.6,0,.4,1) forwards; }
+@keyframes tv-off { 0% { transform: scale(1, 1); filter: brightness(1); } 45% { transform: scale(1, .006); filter: brightness(3); } 100% { transform: scale(0, .006); filter: brightness(4); } }
 .loader.is-done { opacity: 0; visibility: hidden; }
 html.is-loading, html.is-loading body { overflow: hidden; }
